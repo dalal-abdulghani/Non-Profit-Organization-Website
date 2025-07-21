@@ -421,3 +421,12 @@ body.dark-mode {
     margin-bottom: 1rem;
   }
 }
+
+.dark-mode .menu-toggle {
+  color: var(--text-color);
+}
+
+.dark-mode .navbar-nav {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+}

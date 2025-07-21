@@ -47,3 +47,22 @@ function updateThemeIcon(theme) {
     icon.className = 'bi bi-moon';
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navbarNav = document.querySelector('.navbar-nav');
+
+  menuToggle.addEventListener('click', function() {
+    navbarNav.classList.toggle('active');
+    menuToggle.innerHTML = navbarNav.classList.contains('active') 
+      ? '<i class="bi bi-x"></i>' 
+      : '<i class="bi bi-list"></i>';
+  });
+
+  document.querySelectorAll('.navbar-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      navbarNav.classList.remove('active');
+      menuToggle.innerHTML = '<i class="bi bi-list"></i>';
+    });
+  });
+});
