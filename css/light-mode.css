@@ -1,0 +1,39 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #025f3c;
+  --secondary-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --border-color: #ddd;
+  --hero-overlay: rgba(0, 0, 0, 0.5);
+  --theme-btn-bg: #025f3c;
+  --theme-btn-text: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.theme-toggle {
+  background: var(--theme-btn-bg);
+  color: var(--theme-btn-text);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  opacity: 0.9;
+}
+
+.theme-toggle i {
+  font-size: 1.2rem;
+}
+
