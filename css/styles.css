@@ -8,6 +8,33 @@ body {
   padding: 0;
   direction: rtl;
 }
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #025f3c;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -617,7 +644,7 @@ body {
   text-align: center;
   background-color: #fefefe;
   padding: 0;
-  margin-top: -20px; 
+  margin-top: -20px;
 }
 
 .about-content {
@@ -668,4 +695,19 @@ body {
 .navbar-nav {
   display: flex;
   transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.program-card {
+  animation: fadeIn 0.5s ease-out forwards;
 }

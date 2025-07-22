@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>تبرع - الصفحة الرئيسية</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link id="theme-style" rel="stylesheet" href="./css/light-mode.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
-    <script src="./js/main.js"></script>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar-left">
-        <a href="#"
-          ><img
-            src="./images/logo-default-mobile.8c7a4934.svg"
-            alt="تبرع"
-            height="40"
-        /></a>
-         <button class="menu-toggle">
-            <i class="bi bi-list"></i>
-         </button>
-        <ul class="navbar-nav">
-          <li><a href="#">الرئيسية</a></li>
-          <li><a href="./contact.html"> تواصل معنا</a></li>
-          <li><a href="./programs.html">البرامج</a></li>
-          <li><a href="./about.html">من نحن</a></li>
-        </ul>
-      </div>
-      <div class="navbar-right">
-        <a href="#" class="btn">تسجيل الدخول</a>
-        <a href="#"><i class="bi bi-cart3 fs-5"></i></a>
-      </div>
-    </nav>
 
-    <div class="hero">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تبرع - الصفحة الرئيسية</title>
+  <meta name="description" content="المنصة الوطنية للتبرعات في المملكة العربية السعودية" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link id="theme-style" rel="stylesheet" href="./css/light-mode.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">انتقل إلى المحتوى الرئيسي</a>
+  
+  <header class="navbar" role="banner">
+    <div class="navbar-left">
+      <a href="#" aria-label="الصفحة الرئيسية - تبرع">
+        <img src="./images/logo-default-mobile.8c7a4934.svg" alt="شعار المنصة الوطنية للتبرعات" height="40" />
+      </a>
+      <button class="menu-toggle" aria-label="قائمة التنقل" aria-expanded="false" aria-controls="main-navigation">
+        <i class="bi bi-list" aria-hidden="true"></i>
+      </button>
+      <nav id="main-navigation" role="navigation" aria-label="القائمة الرئيسية">
+        <ul class="navbar-nav">
+          <li><a href="#" aria-current="page">الرئيسية</a></li>
+          <li><a href="./contact.html">تواصل معنا</a></li>
+          <li><a href="./programs.html">البرامج</a></li>
+          <li><a href="./reports.html">التقارير</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="navbar-right">
+      <a href="#" class="btn" role="button">تسجيل الدخول</a>
+      <a href="#" aria-label="عربة التسوق"><i class="bi bi-cart3 fs-5" aria-hidden="true"></i></a>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1" role="main">
+    <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-overlay">
         <div class="hero-text">
-          <h1 class="display-5">سِرًّا وَعَلَانِيَةً</h1>
+          <h1 id="hero-heading" class="display-5">سِرًّا وَعَلَانِيَةً</h1>
           <p class="lead">
             تتيح المنصة الوطنية للتبرعات الحل الأسهل والأفضل لإيصال التبرع إلى
             المحتاج في شتى مناطق ووجهات المملكة
           </p>
-          <a href="#" class="btn">تبرع الآن</a>
+          <a href="#" class="btn" role="button">تبرع الآن</a>
         </div>
       </div>
-    </div>
+    </section>
 
-   
-    <section class="about-section">
-      <img
-        src="./images/donations-frame-top-rtl.2636ac19.svg"
-        alt="زخرفة أعلى"
-        class="section-image frame-top"
-      />
+    <section class="about-section" aria-labelledby="about-heading">
+      <img src="./images/donations-frame-top-rtl.2636ac19.svg" alt="" class="section-image frame-top" aria-hidden="true" />
       <div class="about-content">
-        <h2>عن المنصة</h2>
+        <h2 id="about-heading">عن المنصة</h2>
         <p>
           انطلقت المنصة الوطنية للتبرعات "تبرع" تطبيقًا للقرار الوزاري رقم
           (37052) الصادر بتاريخ 30/2/1442هـ، لبناء نموذج وطني لتفعيل التبرعات
@@ -68,45 +65,46 @@
           وزارة الموارد البشرية والتنمية الاجتماعية.
         </p>
       </div>
-      <img
-        src="./images/donations-frame-bottom-rtl.63d8ef71.svg"
-        alt="زخرفة أسفل"
-        class="section-image frame-bottom"
-      />
+      <img src="./images/donations-frame-bottom-rtl.63d8ef71.svg" alt="" class="section-image frame-bottom" aria-hidden="true" />
     </section>
 
-    <section class="stats">
+    <section class="stats" aria-labelledby="stats-heading">
+      <h2 id="stats-heading" class="sr-only">إحصائيات المنصة</h2>
       <div class="stats-container">
-        <div class="stat-item">
-          <i class="bi bi-cash-coin"></i>
-          <h3>20,591,964</h3>
+        <div class="stat-item" aria-labelledby="stat1">
+          <i class="bi bi-cash-coin" aria-hidden="true"></i>
+          <h3 id="stat1">20,591,964</h3>
           <p>عدد العمليات التبرعية</p>
         </div>
-        <div class="stat-item">
-          <i class="bi bi-check-circle"></i>
-          <h3>42,207</h3>
+        <div class="stat-item" aria-labelledby="stat2">
+          <i class="bi bi-check-circle" aria-hidden="true"></i>
+          <h3 id="stat2">42,207</h3>
           <p>الفرص المكتملة</p>
         </div>
-        <div class="stat-item">
-          <i class="bi bi-bar-chart-line"></i>
-          <h3>1,236</h3>
+        <div class="stat-item" aria-labelledby="stat3">
+          <i class="bi bi-bar-chart-line" aria-hidden="true"></i>
+          <h3 id="stat3">1,236</h3>
           <p>عدد فرص التبرع المتاحة</p>
         </div>
       </div>
     </section>
+  </main>
 
-    <footer class="footer">
-      <div class="footer-social">
-        <a href="#"><i class="bi bi-envelope"></i></a>
-        <a href="#"><i class="bi bi-whatsapp"></i></a>
-        <a href="#"><i class="bi bi-telephone"></i></a>
-      </div>
-      <p>المنصة الوطنية للتبرعات &copy; 2024</p>
-      <div class="footer-links">
-        <a href="#">مركز المعرفة</a>
-        <a href="#">الشروط والأحكام</a>
-        <a href="#">الشركاء</a>
-      </div>
-    </footer>
-  </body>
+  <footer class="footer" role="contentinfo">
+    <div class="footer-social">
+      <a href="#" aria-label="البريد الإلكتروني"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+      <a href="#" aria-label="واتساب"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+      <a href="#" aria-label="اتصال هاتفي"><i class="bi bi-telephone" aria-hidden="true"></i></a>
+    </div>
+    <p>المنصة الوطنية للتبرعات &copy; 2025</p>
+    <nav class="footer-links" aria-label="روابط إضافية">
+      <a href="#">مركز المعرفة</a>
+      <a href="#">الشروط والأحكام</a>
+      <a href="#">الشركاء</a>
+    </nav>
+  </footer>
+
+
+</body>
+
 </html>

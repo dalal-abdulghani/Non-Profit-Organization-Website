@@ -430,3 +430,30 @@ body.dark-mode {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
 }
+
+.report-post {
+  background-color: var(--card-bg);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-color);
+}
+
+.report-title h3 {
+  color: var(--primary-color);
+}
+
+.report-date {
+  color: var(--text-secondary);
+}
+
+.report-content {
+  color: var(--text-color);
+}
+
+.stat-item {
+  background-color: var(--stat-bg);
+  color: var(--text-color);
+}
+
+.stat-label {
+  color: var(--text-secondary);
+}
