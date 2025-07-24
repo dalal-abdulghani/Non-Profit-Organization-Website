@@ -172,18 +172,20 @@ body.dark-mode {
 }
 
 .theme-toggle {
-  background: var(--theme-btn-bg);
-  color: var(--theme-btn-text);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  background: none;              /* إزالة الخلفية */
+  color: inherit;                /* استخدم لون النص الحالي */
+  border: none;                  /* إزالة الحدود */
+  padding: 0.5rem;               /* مساحة حول الأيقونة */
+  border-radius: 50%;            /* دائري الشكل - اختياري */
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
   margin-left: 1rem;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
+  font-size: 1.5rem;             /* حجم الأيقونة */
 }
+
 
 .theme-toggle:hover {
   opacity: 0.9;

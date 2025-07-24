@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function addThemeToggleButton() {
   const themeToggle = document.createElement('button');
   themeToggle.className = 'theme-toggle';
-  themeToggle.innerHTML = '<i class="bi"></i> <span class="theme-text"></span>';
+themeToggle.innerHTML = '<i class="bi"></i>';
   themeToggle.addEventListener('click', toggleTheme);
   
   const navbarRight = document.querySelector('.navbar-right');
